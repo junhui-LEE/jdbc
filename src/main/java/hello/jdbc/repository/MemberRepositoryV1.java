@@ -105,7 +105,7 @@ public class MemberRepositoryV1 {
 
     private void close(Connection con, Statement pstmt, ResultSet rs) throws SQLException {
         // 스프링은 JDBC를 편리하게 다룰 수 있는 JdbcUtils라는 편의 메서드를 제공한다.
-        // JdbcUtils을 사용하면 커넥션을 좀 더 편리하게 단을 수 있다.
+        // JdbcUtils을 사용하면 커넥션을 좀 더 편리하게 닫을 수 있다.
         // JdbcUtils는 java와 DB간의 연결을 도와주는 코드(메서드)들을 담고 있는데 그 중에서 닫는 코드(메서드)를 사용했다.
         // 이전에는 커넥션을 닫는 close()함수를 직접 구현했다.
         JdbcUtils.closeConnection(con);
