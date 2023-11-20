@@ -11,13 +11,6 @@ import static org.assertj.core.api.Assertions.*;
 @Slf4j
 public class UncheckedAppTest {
     @Test
-    void unchecked(){
-        Controller controller = new Controller();
-        assertThatThrownBy(()->controller.request())
-                .isInstanceOf(Exception.class);
-    }
-
-    @Test
     void printEx(){
         Controller controller = new Controller();
         try{
@@ -26,6 +19,13 @@ public class UncheckedAppTest {
 //            e.printStackTrace();
             log.info("ex", e);
         }
+    }
+
+    @Test
+    void unchecked(){
+        Controller controller = new Controller();
+        assertThatThrownBy(()->controller.request())
+                .isInstanceOf(Exception.class);
     }
 
     static class Controller{
