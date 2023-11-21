@@ -17,7 +17,7 @@ import java.sql.SQLException;
 @RequiredArgsConstructor
 public class MemberServiceV3_3 {
 //    private final TransactionTemplate txTemplate;
-    private final MemberRepositoryV3 memberRepository;
+    private  MemberRepositoryV3 memberRepository;
     public MemberServiceV3_3(PlatformTransactionManager transactionManager, MemberRepositoryV3 memberRepository){
 //        this.txTemplate = new TransactionTemplate(transactionManager);
 //        트랜잭션 AOP를 적용시킨 프록시가 트랜잭션 관련 코드를 수행하기 떄문에 txTemplate필요 없다.
