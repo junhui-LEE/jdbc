@@ -3,6 +3,7 @@ package hello.jdbc.exeception.basic;
 import lombok.extern.slf4j.Slf4j;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.springframework.dao.DataAccessException;
 
 import static org.assertj.core.api.Assertions.*;
 
@@ -33,7 +34,6 @@ class UncheckedTest {
         }
     }
 
-
     /*
         Unchecked 예외는
         예외를 잡거나, 던지지 않아도 된다.
@@ -61,43 +61,3 @@ class UncheckedTest {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
