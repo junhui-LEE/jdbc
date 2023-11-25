@@ -53,7 +53,7 @@ public class SpringExceptionTranslatorTest {
             assertThat(resultEx.getClass()).isEqualTo(BadSqlGrammarException.class);
 //          우리가 repository에서 예외 변환을 우리가 직접하는 것이 아니고 이 코드를 직접 써서 변환하면
 //          되는 것이다. 그럼 스프링의 예외 추상화 계층에 있는 스프링 예외 추상화를 그대로 쓸 수 있는 것이다.
-//          ,다시말해 스프링에서 제공하는 데이터 접근 계층의 예외를 쓸 수 있는 것이다. 
+//          ,다시말해 스프링에서 제공하는 데이터 접근 계층의 예외를 쓸 수 있는 것이다.
         }
     }
 
